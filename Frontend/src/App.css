@@ -1,0 +1,161 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  /* background: url("/mobile.jpg") no-repeat center center/cover; */
+  background: url("/background.avif") no-repeat center center/cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.landingPageContainer nav .navlist p:hover{
+  color: #D97500;
+  font-weight: 400;
+}
+
+.landingMainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 70vh;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 2rem;
+  flex: 1 1 300px;
+  color: rgb(22, 104, 186);
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+.landingMainContainer > div:nth-child(1) div[role='button']:hover{
+  background: #108236;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.landingMainContainer > div:nth-child(2) {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.meetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: auto;
+  gap: 5vw;
+  justify-content: center;
+}
+
+.leftPanel {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPanel {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPanel > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ✅ Responsive Breakpoints */
+@media screen and (max-width: 768px) {
+  .landingMainContainer {
+    flex-direction: column;
+    padding-inline: 1.2rem;
+    text-align: center;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.6rem;
+  }
+
+  .landingPageContainer nav h2 {
+    font-size: 1.5rem;
+  }
+
+  .landingPageContainer nav .navlist {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .rightPanel > img {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landingPageContainer nav,
+  .landingMainContainer {
+    padding: 1rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.3rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role='button'] a {
+    font-size: 1.2rem;
+  }
+
+  .rightPanel > img {
+    width: 90vw;
+  }
+}
