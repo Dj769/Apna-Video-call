@@ -477,6 +477,7 @@ export default function VideoMeetComponent() {
                             variant="outlined"
                             label="Username"
                             value={username}
+                            required={true}
                             onChange={(e) => setUsername(e.target.value)}
                             sx={{
                                 mb: 3,
